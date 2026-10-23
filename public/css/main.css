@@ -27,4 +27,31 @@ body {
             }
         }
     }
+
+    .catalog-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+    }
+
+    .catalog-table caption {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .catalog-table th,
+    .catalog-table td {
+        border: 1px solid #666;
+        padding: 12px;
+        text-align: left;
+        overflow-wrap: anywhere;
+    }
+
+    .catalog-table thead {
+        background-color: #e6eef5;
+    }
+
+    .catalog-table tbody tr:nth-child(even) {
+        background-color: #f5f5f5;
+    }
 }

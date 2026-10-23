@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+
+<main>
+    <h1><%= title %></h1>
+    <table class="catalog-table">
+        <caption>Faculty Members</caption>
+        <thead>
+            <tr>
+                <th scope="col">Faculty Name</th>
+                <th scope="col">Title</th>
+                <th scope="col">Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% Object.values(faculties).forEach(faculty => { %>
+                <tr>
+                    <th scope="row"><%= faculty.name %></th>
+                    <td><%= faculty.title %></td>
+                    <td><%= faculty.department %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</main>
+<%- include('../partials/footer') %>
